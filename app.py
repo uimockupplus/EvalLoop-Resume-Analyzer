@@ -1,5 +1,5 @@
 from pydf import PdfReader
-pdf_path = "resumes/my_resume.pdf"
+pdf_path = "resumes/Kaneti_Vivek_Resume.pdf"
 reader = PdfReader(pdf_path)
 text=" "
 for page in reader.pages:
