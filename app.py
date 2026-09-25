@@ -1,8 +1,15 @@
 from pypdf import PdfReader
-pdf_path = "resumes/Kaneti_Vivek_Resume.pdf"
+
+pdf_path = "resumes/my_resume.pdf"
+
 reader = PdfReader(pdf_path)
-text=" "
+
+text = ""
+
 for page in reader.pages:
-  text += pages.extract_text() or " "
-  print("______Resume Text_______")
-  print (text)
+    page_text = page.extract_text() or ""
+    text += page_text
+
+print("----- RESUME TEXT -----")
+print(text)
+print("-----------------------")
