@@ -1,4 +1,4 @@
-from pydf import PdfReader
+from pypdf import PdfReader
 pdf_path = "resumes/Kaneti_Vivek_Resume.pdf"
 reader = PdfReader(pdf_path)
 text=" "
